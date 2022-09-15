@@ -1,9 +1,26 @@
 .App {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
+}
+
+.button-header {
+  width: 100vw;
+  border-bottom: 1px solid blue;
+  display: flex;
+
+}
+
+.button-header * {
+  padding: 8px;
+  font-size: large;
+  flex: 1;
+  border: none
+
 }
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }

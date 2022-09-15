@@ -3,8 +3,8 @@ import NewCounter from './components/NewCounter';
 import './App.css';
 
 const App = () => {
-  const [numCounter, setNumCounter] = useState(2)
-  const [saves, setSaves] = useState([0, 0])
+  const [numCounter, setNumCounter] = useState(1)
+  const [saves, setSaves] = useState([0])
 
   const addCounter = () => {
     let temp = saves
@@ -26,9 +26,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <div>
-        <button onClick={addCounter}>Add Counter</button>
-        <button onClick={() => setNumCounter(numCounter - 1)}>Subtract Counter</button>
+      <div className='button-header'>
+        <button onClick={addCounter} style={{backgroundColor: "#28a745"}}>Add Counter</button>
+        <button onClick={() => setNumCounter(numCounter - 1)} style={{backgroundColor: "#dc3545"}}>Subtract Counter</button>
       </div>
       
       <Counters />
