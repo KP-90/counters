@@ -1,11 +1,10 @@
 .App {
-  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  color: black;
   text-align: center;
 }
 
 .button-header {
   width: 100vw;
-  border-bottom: 1px solid blue;
   display: flex;
 
 }
