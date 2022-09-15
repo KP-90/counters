@@ -1,0 +1,15 @@
+.new-counter {
+    margin: .5em 1em;
+}
+
+.button {
+    border-radius: 50%;
+    padding: 5px;
+    height: 10em;
+    width: 10em;
+}
+
+.count {
+    font-size: 10em;
+    margin: 0;
+}
