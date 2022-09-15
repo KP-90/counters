@@ -23,4 +23,31 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.adding:last-child {
+  animation: .5s slidein;
+}
+
+.subtract:last-child {
+  animation: .5s slideout;
+}
+
+@keyframes slideout {
+  from{
+    transform: 0%;
+  }
+  to{
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slidein {
+  from{
+      transform: translateX(100%)
+  }
+  to{
+      transform: translateX(0%);
+  }
 }
